@@ -15,6 +15,9 @@ This project is a **news web scraper** that extracts news articles from **wiadom
 📂 news-scraper/
 ├── news-scraper.py          # News scraping script
 ├── server.py                # Local server script
+├── Procfile                 # [Render] File for honcho to use
+├── requirements.txt         # [Render] Required dependencies to install
+├── server-for-render.py     # [Render] Remote server script
 │
 └── 📂 website/
     ├── index.html           # Homepage with category buttons
@@ -52,6 +55,9 @@ Once the server is running, open your web browser and navigate to:
 ```
 http://localhost:9000/
 ```
+
+## [Render] Files
+**Procfile**, **requirements.txt** and **server-for-render.py** are files for Render deployment and you do not need them to launch the scraper on your local machine.
 
 ## License
 This project is open-source and can be modified or distributed under the MIT License.
