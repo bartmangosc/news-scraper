@@ -12,13 +12,13 @@ This project is a **news web scraper** that extracts news articles from **wiadom
 
 ## Directory Structure
 ```
-news-scraper/
+📂 news-scraper/
 ├── news-scraper.py          # News scraping script
 ├── server.py                # Local server script
 │
-└── website/
+└── 📂 website/
     ├── index.html           # Homepage with category buttons
-    ├── categories/          # Folder containing news categories
+    ├── 📂 categories/          # Folder containing news categories
     │   ├── historia.html
     │   ├── pogoda.html
     │   ├── polityka.html
