@@ -52,6 +52,3 @@ PORT = int(os.environ.get("PORT", 10000))
 httpd = HTTPServer(('0.0.0.0', PORT), Serv)
 print(f"Server running on port {PORT}...")
 httpd.serve_forever()
-
-#httpd = HTTPServer(('localhost', 9000), Serv)
-#httpd.serve_forever()
