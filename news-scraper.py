@@ -58,6 +58,8 @@ def scrape_news(category, url, color):
 
         for x, header in enumerate(headers):
             if x < len(links) and x < len(filtered_images):
+                if links[x].startswith("/s/"):
+                    links[x] = "https://wiadomosci.wp.pl" + links[x]
                 file.write(f'''
                             <div class="article-box">
                                 <img src="{filtered_images[x]}" alt="Article Image" style="width: 308px; height: 180px; object-fit: cover;">
