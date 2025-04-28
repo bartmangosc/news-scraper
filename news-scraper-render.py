@@ -15,7 +15,7 @@ def scrape_news(category, url, color):
 
     soup = BeautifulSoup(response.text, "html.parser")
     headers = soup.find_all('h2')
-    news_urls = soup.find_all('a', class_="h2PrHTUx")
+    news_urls = soup.find_all('a', class_="i2PrHTUx")
     article_images = soup.find_all("img", class_=lambda x: x and "i3BQvntU i2_iGbjC" in x)
 
     links = [link['href'] for link in news_urls]
